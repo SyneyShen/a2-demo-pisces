@@ -1,0 +1,11 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)" novalidate>
+  <h4 class="mdl-dialog__title">登录</h4>
+  <div class="mdl-dialog__content">
+    <mdl-textfield #firstElement type="text" label="请输入账号" ngModel name="username" floating-label autofocus></mdl-textfield>
+    <br/>
+    <mdl-textfield type="password" label="请输入密码" ngModel name="password" floating-label></mdl-textfield>
+  </div>
+  <div class="mdl-dialog__actions">
+    <button mdl-button type="submit" mdl-button-type="raised" mdl-colored="primary" mdl-ripple>登录</button>
+  </div>
+</form>
