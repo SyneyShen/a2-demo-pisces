@@ -5,18 +5,24 @@ import { HttpModule } from '@angular/http';
 import { MdlModule } from 'angular2-mdl';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { IndexComponent } from './index/index.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    IndexComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MdlModule
+    MdlModule,
+    AppRoutingModule
   ],
   entryComponents: [LoginComponent],
   providers: [],
